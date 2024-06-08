@@ -1,24 +1,28 @@
 export interface Dog {
   id: string;
   name: string;
-  description: string;
+  breed: string;
   age: number;
-  gender: string;
+  owner: {
+    id: string;
+    name: string;
+  };
   imageUrl: string;
-}
-
-export interface User {
-  id: string;
-  username: string;
-  email: string;
-  password: string;
-  dogId: Array<string>;
-  role: string;
+  description: string;
+  gender: string;
+  size: string;
 }
 
 export interface Message {
   id: string;
-  userId: string;
-  content: string;
+  text: string;
+  sender: {
+    id: string;
+    name: string;
+  };
+  receiver: {
+    id: string;
+    name: string;
+  };
   createdAt: string;
 }

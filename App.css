@@ -1,0 +1,45 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navLeft,
+.navRight {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLeft {
+  order: 2;
+}
+
+.navRight {
+  order: 1;
+}
+
+.navLeft li,
+.navRight li {
+  margin-right: 1rem;
+}
+
+.navLeft li:first-child,
+.navRight li:first-child {
+  margin-left: 0;
+}
+
+.navLeft a,
+.navRight a {
+  color: #fff;
+  text-decoration: none;
+}
