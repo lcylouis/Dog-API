@@ -1,0 +1,84 @@
+/* 定義顏色變量 */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--light-color);
+}
+
+.searchBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.searchBox input,
+.searchBox select {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.searchBox button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dogList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dogItem {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.dogItem h3 {
+  margin-top: 0;
+  color: var(--dark-color);
+}
+
+.dogItem p {
+  margin: 5px 0;
+  color: var(--secondary-color);
+}
+
+.dogItem img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.uploadButton, .deleteButton {
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.uploadButton:hover, .deleteButton:hover {
+  background-color: #0056b3;
+}
